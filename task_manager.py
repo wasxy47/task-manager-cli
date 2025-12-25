@@ -22,6 +22,8 @@ if __name__ == "__main__":
     add_task("First task by Abdul Wasay")
 
 
+# --- Syed Ali Raza'S FEATURE: DELETE TASK ---
+
 def delete_task(task_id):
     tasks = load_tasks()
     new_tasks = [t for t in tasks if t['id'] != task_id]
