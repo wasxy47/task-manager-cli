@@ -20,3 +20,12 @@ def add_task(description):
 
 if __name__ == "__main__":
     add_task("First task by Abdul Wasay")
+
+
+# ----Muhammad Hassan's Task SHow Task ----
+def show_tasks():
+    tasks = load_tasks()
+    if not tasks:
+        print("No tasks found.")
+    for t in tasks:
+        print(f"ID: {t['id']} | Task: {t['task']} | Status: {t['status']}")
