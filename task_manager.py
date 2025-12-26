@@ -38,3 +38,12 @@ def show_tasks():
         print("No tasks found.")
     for t in tasks:
         print(f"ID: {t['id']} | Task: {t['task']} | Status: {t['status']}")
+
+# --- Talha Bin Ajmal FEATURE: Update TASK ---
+def update_task(task_id):
+    tasks = load_tasks()
+    for t in tasks:
+        if t['id'] == task_id:
+            t['status'] = 'Completed'
+    save_tasks(tasks)
+    print(f"Task {task_id} updated successfully.")
